@@ -28,17 +28,10 @@ import { state, animateChild, stagger, trigger, query, transition, animate, styl
     ]),
     trigger('parentAnimation', [
       transition('* => in', [
-        group([
-            query('.test', [
-                stagger(200, [
-                    animateChild()
-                ])
-            ]),
-            query('.test2', [
-              stagger(200, [
-                  animateChild()
-              ])
-          ])
+        query('@testAnimation', [
+            stagger(200, [
+                animateChild()
+            ])
         ])
       ])
     ])
