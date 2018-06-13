@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+ul li {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: red;
+}
